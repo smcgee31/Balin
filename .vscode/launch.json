@@ -34,17 +34,5 @@
           "<node_internals>/**/*.js"
         ]
     },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch File",
-      "env": {},
-      "console": "integratedTerminal",
-      "program": "${file}",
-      "skipFiles": [
-          "${workspaceRoot}/node_modules/**/*.js",
-          "<node_internals>/**/*.js"
-      ]
-    },
   ]
 }

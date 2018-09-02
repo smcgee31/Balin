@@ -2,17 +2,17 @@
 
 const { expect } = require('chai');
 const dbName = 'testing_npm_pkg';
-const host = 'http://localhost:5984';
+const host = 'http://127.0.0.1:5984/';
 const db = require('../axiouch')(host, dbName);
 // const db = axiouch(host, dbName);
 
-describe('first test', () => {
-  const data = { test: 1 };
+describe('#insert', () => {
+  const jsonInfo = { test: 5 };
 
-  it('runs fine', async() => {
-    const result = await db.insert(data);
+  it('adds a record to test db', async() => {
+    const { data } = await db.insert(jsonInfo);
 
-    expect(result).to.equal(true);
+    expect(data.ok).to.equal(true);
   });
 });
 

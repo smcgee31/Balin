@@ -1,13 +1,22 @@
 {
   "name": "axiouch",
+  "homepage": "https://github.com/smcgee31/axiouch#readme",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "Steve McGee",
+  "bugs": {
+    "url": "https://github.com/smcgee31/axiouch/issues"
+  },
   "description": "Library that uses Axios to access CouchDb for Node.js",
-  "main": "index.js",
+  "main": "axiouch.js",
   "engines": {
     "node": "8.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "NODE_ENV=development mocha --recursive --bail",
+    "mocha": "NODE_ENV=${NODE_ENV:-testing} mocha",
+    "coverage": "nyc -r json-summary -r html --report-dir ./test/results/coverage yarn mocha && nyc report && nyc check-coverage"
   },
   "repository": "git+https://github.com/smcgee31/axiouch.git",
   "keywords": [
@@ -15,12 +24,6 @@
     "couchdb",
     "couch"
   ],
-  "author": "Steve McGee",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/smcgee31/axiouch/issues"
-  },
-  "homepage": "https://github.com/smcgee31/axiouch#readme",
   "dependencies": {
     "axios": "^0.18.0"
   },

@@ -1,3 +1,5 @@
 
 ./test/**/*.test.js
 --timeout 20000
+
+# no reporter installed yet
