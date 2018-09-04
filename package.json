@@ -14,7 +14,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "NODE_ENV=development mocha --recursive --bail",
+    "test": "NODE_ENV=development mocha --recursive",
     "mocha": "NODE_ENV=${NODE_ENV:-testing} mocha",
     "coverage": "nyc -r json-summary -r html --report-dir ./test/results/coverage yarn mocha && nyc report && nyc check-coverage"
   },

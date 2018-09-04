@@ -1,7 +1,6 @@
 {
   "extends": [
-    "vstg",
-    "vstg-lambda"
+    "vstg"
   ],
   "env": {
     "es6": true
