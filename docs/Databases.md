@@ -1,3 +1,7 @@
+# Databases API
+
+---
+
 ## .create(db)
 Creates a new database. The database name must be composed by following next rules:
 
@@ -66,7 +70,7 @@ try {
 
 The entire response from axios is returned so all other items (headers, request, etc.) would also be part of the response object.
 
-----------------------------------------------
+---
 
 ## .destroy(db)
 Deletes the specified database, and all the documents and attachments contained within it.

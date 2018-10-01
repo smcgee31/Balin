@@ -1,3 +1,9 @@
+/*
+ * These are live tests and CouchDB should be running on
+ * your machine when these tests are run or they will fail.
+ *
+*/
+
 'use strict';
 
 const { expect } = require('chai');
@@ -7,13 +13,13 @@ const axiouch = require('../axiouch')(host);
 describe('Database tests', () => {
   const dbName = 'test-db-1';
 
-  it('.create(dbName) adds a new database', async() => {
+  it('.create(dbName) - adds a new database', async() => {
     const response = await axiouch.create(dbName);
 
     expect(response.data.ok).to.equal(true);
   });
 
-  it('.create(dbName) fails to add the same database', async() => {
+  it('.create(dbName) - fails to add the same database', async() => {
     try {
       await axiouch.create(dbName);
       throw new Error('Did not throw!');
@@ -22,7 +28,7 @@ describe('Database tests', () => {
     }
   });
 
-  it('.destroy(dbName) removes the previously created database', async() => {
+  it('.destroy(dbName) - removes the previously created database', async() => {
     const response = await axiouch.destroy(dbName);
 
     expect(response.data.ok).to.equal(true);

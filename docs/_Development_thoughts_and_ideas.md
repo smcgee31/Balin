@@ -9,6 +9,7 @@ All the other fancy stuff, go ahead and use Nano... or call CouchDB directly. I 
 ---
 
 #### Possible names: (most are obviously a play on "couch")
+
 **these are at lease unique:**
 ~~lazyboy~~ or lazyboi
 ~~loveseat~~
@@ -16,8 +17,16 @@ All the other fancy stuff, go ahead and use Nano... or call CouchDB directly. I 
 ~~kickback~~
 ~~sofa~~
 ~~sofaking~~ or ~~sofa-king~~
+
 **these are pretty dumb (even for me):**
 maxicouch or maxi-couch
-axiouch
+axiouch <- so far this is the one.   :(
 axicouch or axi-couch
 couchios
+
+**other names for couch or whatnot:**
+toro - couch in Latin
+divan - another type of couch (english)
+divano - couch in Italian
+
+avouch - to declare freely, openly (speak) and it rhymes with couch!  :)
