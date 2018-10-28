@@ -1,13 +1,10 @@
 ## .insert(data)
-Either: 
-creates a new named document (doc `id` is included),
-creates a new unnamed document (doc `id` is not included), 
-creates a new revision (updates) the existing document (doc `id` and `rev` are included).
+The `insert` method will either create a new document or update an existing one.
 
 #### Parameters:	
 * data – Object containing the data to be saved as a document.
-  * _id – Document ID. If included the new document will be named with this id.
-  * _rev – Document revision MVCC token. If included with the _id then the document will be updated.
+  * `_id` – Document ID. If included the new document will be named with this id, without it CouchDB will assign it's own.
+  * `_rev` – Document revision MVCC token. If included with the `_id` then the document will be updated.
 
 #### Request Headers:
 * Accept –

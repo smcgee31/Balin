@@ -5,7 +5,7 @@
 const { expect } = require('chai');
 const testDb = 'test-db-1';
 const host = 'http://localhost:5984/';
-const axiouch = require('../axiouch')(host);
+const taminion = require('..')(host);
 
 describe('Document tests', () => {
   const testInfo = {
@@ -16,15 +16,15 @@ describe('Document tests', () => {
   let testDocId;
 
   before(async() => {
-    await axiouch.create(testDb);
+    await taminion.create(testDb);
   });
 
   after(async() => {
-    await axiouch.destroy(testDb);
+    await taminion.destroy(testDb);
   });
 
   it('.insert(data) adds a record to the test database', async() => {
-    const db = axiouch.use(testDb);
+    const db = taminion.use(testDb);
     const response = await db.insert(testInfo);
 
     testDocId = response.data.id;
@@ -37,7 +37,7 @@ describe('Document tests', () => {
   });
 
   it('.get(id) fetches the specified document', async() => {
-    const db = axiouch.use(testDb);
+    const db = taminion.use(testDb);
     const response = await db.get(testDocId);
 
     expect(response.status).to.equal(200);
@@ -49,7 +49,7 @@ describe('Document tests', () => {
   });
 
   it('.get(id, params) fetches the specified document', async() => {
-    const db = axiouch.use(testDb);
+    const db = taminion.use(testDb);
     const params = { conflict: true };
     const response = await db.get(testDocId, params);
 
