@@ -1,17 +1,17 @@
-# axiouch
+# Taminium
 Library that uses Axios to access CouchDb
 
 #### Installation
 1. Install `npm`
-1. Run `npm install axiouch`
+1. Run `npm install taminium`
 
 #### Getting Started
-To use Axiouch you will need to connect to your CouchDb.
+To use Taminium you will need to connect to your CouchDb.
 ```js
-const axiouch = require('axiouch');
-const db = axiouch('http://localhost:5984');
+const taminium = require('taminium');
+const db = taminium('http://localhost:5984');
 ```
 alternatively you could also use:
 ```js
-const db = require('axiouch')('http://localhost:5984');
+const db = require('taminium')('http://localhost:5984');
 ```

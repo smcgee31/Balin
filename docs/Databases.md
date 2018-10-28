@@ -38,7 +38,7 @@ If you’re familiar with Regular Expressions, the rules above could be written 
 
 **Example Request: (using standard promises)**
 ```js
-axiouch.create('my-database').then((response) => {
+taminion.create('my-database').then((response) => {
   // success - data is in 'response.data'
 }).catch((err) => {
   // failure - error information is in 'err'
@@ -48,7 +48,7 @@ axiouch.create('my-database').then((response) => {
 **Example Request: (using async/await)**
 ```js
 try {
-  const response = await axiouch.create('my-database');
+  const response = await taminion.create('my-database');
   // success - data is in 'response.data'
 } catch {
   // any exception thrown from the await or error thrown from CouchDB
@@ -97,7 +97,7 @@ db – Database name
 
 **Example Request: (using standard promises)**
 ```js
-axiouch.destroy('my-database').then((response) => {
+taminion.destroy('my-database').then((response) => {
   // success - data is in 'response.data'
 }).catch((err) => {
   // failure - error information is in 'err'
@@ -107,7 +107,7 @@ axiouch.destroy('my-database').then((response) => {
 **Example Request: (using async/await)**
 ```js
 try {
-  const response = await axiouch.destroy('my-database');
+  const response = await taminion.destroy('my-database');
   // success - data is in 'response.data'
 } catch {
   // any exception thrown from the await or error thrown from CouchDB

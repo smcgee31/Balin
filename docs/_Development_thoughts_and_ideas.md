@@ -10,6 +10,11 @@ All the other fancy stuff, go ahead and use Nano... or call CouchDB directly. I 
 
 #### Possible names: (most are obviously a play on "couch")
 **these are at lease unique:**
+tamian
+taminimum
+taminium or taminiun
+taminiam or taminian
+taminiom or taminion <-- small, funny
 ~~lazyboy~~ or lazyboi
 ~~loveseat~~
 ~~recliner~~
